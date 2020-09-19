@@ -43,7 +43,7 @@ import isUrl from 'is-url';
       const generatedFilePath: string = await filterImageFromURL(imageUrl)
       res.status(200).sendFile(generatedFilePath, async (err: Errback) => {
         if(err)  {
-          res.status(500).json({error: "Sorry! something went wrong"})
+          res.status(422).json({error: "Sorry! something went wrong"})
         }
         await deleteLocalFiles([generatedFilePath])
       })
