@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "is-url": "^1.2.4",
     "jimp": "^0.6.4"
   }
 }
